@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Temp Tracker</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+<main class="main">
+  <div class="container">
+    <div class="search">
+      <form id="form" class="search__form form">
+        <div class="form__field">
+          <label for="city" class="form__label">Search for a city:</label>
+          <input type="text" id="city" class="form__input" placeholder="Lima" autofocus/>
+        </div>
+
+        <button id="button-search" class="form__button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+               stroke-linejoin="round" class="lucide lucide-search">
+            <path d="m21 21-4.34-4.34"/>
+            <circle cx="11" cy="11" r="8"/>
+
+            <span>Buscar</span>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <div id="info" class="info">
+      <p id="info-description" class="info__description">Parcialmente nublado</p>
+
+      <div class="info__image">
+        <img id="info-icon"
+             src='https:://cdn.weatherapi.com/v4/images/weatherapi_logo.png'
+             alt="Weather data by WeatherAPI.com"/>
+      </div>
+
+      <div class="info__temperature">
+        <h3 id="info-temperature-value" class="info__temperature-value">6°C</h3>
+        <h4 id="info-temperature-city" class="info__temperature-city">Lima</h4>
+      </div>
+
+      <div class="info__details">
+        <div class="info__humidity">
+          <div class="info__wind-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round" class="lucide lucide-sun-snow">
+              <path d="M10 21v-1"/>
+              <path d="M10 4V3"/>
+              <path d="M10 9a3 3 0 0 0 0 6"/>
+              <path d="m14 20 1.25-2.5L18 18"/>
+              <path d="m14 4 1.25 2.5L18 6"/>
+              <path d="m17 21-3-6 1.5-3H22"/>
+              <path d="m17 3-3 6 1.5 3"/>
+              <path d="M2 12h1"/>
+              <path d="m20 10-1.5 2 1.5 2"/>
+              <path d="m3.64 18.36.7-.7"/>
+              <path d="m4.34 6.34-.7-.7"/>
+            </svg>
+          </div>
+
+          <div class="info__humidity-temp">
+            <p id="info-humidity-value" class="info__humidity-value">85%</p>
+            <p id="info-humidity-label" class="info__humidity-label">Humedad</p>
+          </div>
+        </div>
+
+        <div class="info__wind">
+          <div class="info__wind-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                 stroke-linejoin="round" class="lucide lucide-wind">
+              <path d="M12.8 19.6A2 2 0 1 0 14 16H2"/>
+              <path d="M17.5 8a2.5 2.5 0 1 1 2 4H2"/>
+              <path d="M9.8 4.4A2 2 0 1 1 11 8H2"/>
+            </svg>
+          </div>
+
+          <div class="info__wind-temp">
+            <p id="info-wind-value" class="info__wind-value">4.3 km/h</p>
+            <p id="info-wind-label" class="info__wind-label">Viento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<script src="./script/main.js"></script>
+</body>
+</html>
