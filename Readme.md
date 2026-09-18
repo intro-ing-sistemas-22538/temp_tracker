@@ -20,15 +20,8 @@ actividades con confianza.
 
 La página web se basa en una arquitectura cliente-servidor:
 
-```mermaid
-zenuml
-  title Diseño de software
-  
-  @VirtualMachine Cliente
-  @AzureBackup Servidor
-  Cliente->Servidor: Consulta de clima
-    Servidor->Cliente: Respuesta con datos del clima
-```
+<img width="1248" height="680" alt="image" src="https://github.com/user-attachments/assets/dfd62940-6518-4272-b553-0dec10ac49dd" />
+
 
 ## La página web se compone de los siguientes componentes principales:
 
